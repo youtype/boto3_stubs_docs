@@ -25,12 +25,15 @@ async function getDownloadURL(packageName, version) {
             res.on("data", chunk => data.push(chunk))
             res.on("end", () => {
                 const response = JSON.parse(Buffer.concat(data).toString())
+                console.log('getDownloadURL response', response)
                 const versionsData = response.releases[version]
+                // console.log('getDownloadURL versionsData', versionsData)
                 if (!versionsData) {
                     return reject(new Error(`No download URLs found for ${packageName} ${version}`))
                 }
 
                 const versionData = versionsData.find(x => x.packagetype === 'bdist_wheel') || versionsData[0]
+                console.log('getDownloadURL result', versionData.url)
                 resolve(versionData.url)
             })
         })
@@ -178,6 +181,10 @@ async function extractAioBotocoreVersions({ core, context }) {
             context.payload.inputs.aiobotocore_version :
             await getAioBotocoreVersion()
     )
+
+    core.info(`Aiobotocore version = ${aiobotocoreVersion}`)
+    core.setOutput('aiobotocore-version', aiobotocoreVersion)
+
     const force = context.payload.inputs ? context.payload.inputs.force !== 'false' : false
 
     let buildAll = (context.payload.inputs && context.payload.inputs.build_all !== 'false') ? 'true' : 'false'
@@ -189,7 +196,7 @@ async function extractAioBotocoreVersions({ core, context }) {
     core.info(`Build all packages = ${buildAll}`)
     core.setOutput('build-all', buildAll)
 
-    const versions = await getTypesAioBotocoreVersions(boto3Version)
+    const versions = await getTypesAioBotocoreVersions(aiobotocoreVersion)
     core.info(`Built versions ${versions}`)
 
     if (context.payload.inputs && context.payload.inputs.stubs_version) {
@@ -207,8 +214,8 @@ async function extractAioBotocoreVersions({ core, context }) {
     }
 
     if (!versions.length) {
-        core.info(`No builds found, building initial ${boto3Version}`)
-        core.setOutput('version', boto3Version)
+        core.info(`No builds found, building initial ${aiobotocoreVersion}`)
+        core.setOutput('version', aiobotocoreVersion)
         return
     }
 
@@ -227,6 +234,7 @@ async function extractAioBotocoreDownloadLinks({ core }) {
 }
 
 module.exports = {
+    getDownloadURL,
     sortVersions,
     getNextPostVersion,
     getReleaseVersions,
@@ -235,6 +243,7 @@ module.exports = {
     getBotocoreVersion,
     extractVersions,
     extractDownloadLinks,
+    extractAioBotocoreVersions,
     getAioBotocoreVersion,
     getTypesAioBotocoreVersions,
     extractAioBotocoreDownloadLinks,
